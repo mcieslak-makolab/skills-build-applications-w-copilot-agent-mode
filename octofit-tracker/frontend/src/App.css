@@ -1,0 +1,124 @@
+:root {
+  --octo-bg: radial-gradient(circle at 15% 20%, #d9ecff 0%, transparent 30%),
+    radial-gradient(circle at 85% 10%, #dff7e1 0%, transparent 26%),
+    linear-gradient(140deg, #f8fafc 0%, #eef5ff 55%, #f5fbf3 100%);
+  --octo-ink: #16324f;
+  --octo-accent: #0d6efd;
+  --octo-accent-soft: #e8f0ff;
+  --octo-accent-dark: #0a4ab8;
+  --octo-nav-text: #1e4266;
+}
+
+body {
+  margin: 0;
+  background: var(--octo-bg);
+  color: var(--octo-ink);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0e3359;
+}
+
+.app-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.25);
+}
+
+.octo-navbar {
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(13, 110, 253, 0.08);
+}
+
+.octo-navbar .nav-link {
+  color: var(--octo-nav-text);
+  font-weight: 600;
+  border-radius: 0.6rem;
+}
+
+.octo-navbar .nav-link.active,
+.octo-navbar .nav-link:hover {
+  background: var(--octo-accent-soft);
+  color: var(--octo-accent-dark);
+}
+
+.octo-card {
+  border: 1px solid rgba(22, 50, 79, 0.1);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 14px 34px rgba(22, 50, 79, 0.1);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #0f3f73;
+}
+
+a,
+.link-primary {
+  color: #0b5ed7;
+}
+
+a:hover,
+.link-primary:hover {
+  color: #0a47a0;
+}
+
+.btn-primary {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+.btn-primary:hover {
+  background-color: #0a4ab8;
+  border-color: #0a4ab8;
+}
+
+.btn-outline-primary {
+  color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+.btn-outline-primary:hover {
+  background: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+.octo-table thead th {
+  background: #e7f0ff;
+  color: #123f6a;
+  border-bottom: 2px solid #bdd4ff;
+  white-space: nowrap;
+}
+
+.octo-table tbody tr:nth-child(even) {
+  background: #f8fbff;
+}
+
+.octo-table tbody tr:hover {
+  background: #eaf3ff;
+}
+
+.octo-modal-backdrop {
+  background: rgba(3, 13, 27, 0.55);
+}
+
+.octo-empty {
+  color: #496784;
+}
